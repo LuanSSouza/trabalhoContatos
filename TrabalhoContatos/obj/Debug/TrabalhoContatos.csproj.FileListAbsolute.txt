@@ -1,0 +1,9 @@
+c:\users\aluno\desktop\TrabalhoContatos\TrabalhoContatos\bin\Debug\TrabalhoContatos.exe.config
+c:\users\aluno\desktop\TrabalhoContatos\TrabalhoContatos\obj\Debug\TrabalhoContatos.csprojResolveAssemblyReference.cache
+c:\users\aluno\desktop\TrabalhoContatos\TrabalhoContatos\obj\Debug\TrabalhoContatos.Properties.Resources.resources
+c:\users\aluno\desktop\TrabalhoContatos\TrabalhoContatos\obj\Debug\TrabalhoContatos.csproj.GenerateResource.Cache
+c:\users\aluno\desktop\TrabalhoContatos\TrabalhoContatos\bin\Debug\TrabalhoContatos.exe
+c:\users\aluno\desktop\TrabalhoContatos\TrabalhoContatos\bin\Debug\TrabalhoContatos.pdb
+c:\users\aluno\desktop\TrabalhoContatos\TrabalhoContatos\obj\Debug\TrabalhoContatos.GUI.resources
+c:\users\aluno\desktop\TrabalhoContatos\TrabalhoContatos\obj\Debug\TrabalhoContatos.exe
+c:\users\aluno\desktop\TrabalhoContatos\TrabalhoContatos\obj\Debug\TrabalhoContatos.pdb
