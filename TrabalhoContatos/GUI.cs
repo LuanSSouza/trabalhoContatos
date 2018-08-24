@@ -21,8 +21,14 @@ namespace TrabalhoContatos
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             var contato = this.contatos.pesquisar(new Contato(txtEmail.Text));
-            txtNome.Text = contato.Nome;
-            txtFone.Text = contato.Fone;
+
+            if (contatos.pesquisar(new Contato(txtEmail.Text)) != null) {
+                txtNome.Text = contato.Nome;
+                txtFone.Text = contato.Fone;
+            }
+            else
+                MessageBox.Show("Nenhum item encontrado!");
+
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
@@ -34,24 +40,29 @@ namespace TrabalhoContatos
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
-            if(contatos.pesquisar(new Contato(txtEmail.Text)) == null)
-                this.contatos.incluir(new Contato(txtEmail.Text, txtNome.Text, txtFone.Text));
-            else this.contatos.alterar(new Contato(txtEmail.Text, txtNome.Text, txtFone.Text));
-            txtEmail.Text = "";
-            txtNome.Text = "";
-            txtFone.Text = "";
+            if (txtEmail.Text == "") MessageBox.Show("Digite o e-mail");
+            else {
+                if (contatos.pesquisar(new Contato(txtEmail.Text)) == null)
+                    this.contatos.incluir(new Contato(txtEmail.Text, txtNome.Text, txtFone.Text));
+                else
+                    this.contatos.alterar(new Contato(txtEmail.Text, txtNome.Text, txtFone.Text));
+                txtEmail.Text = "";
+                txtNome.Text = "";
+                txtFone.Text = "";
+            }
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
-            if (this.contatos.excluir(new Contato(txtEmail.Text)))
-            {
+            if (txtEmail.Text == "") MessageBox.Show("Digite o e-mail");
+            else if (this.contatos.excluir(new Contato(txtEmail.Text))){
                 MessageBox.Show("Excluído com Sucesso!");
                 txtEmail.Text = "";
                 txtNome.Text = "";
                 txtFone.Text = "";
             }
-            else MessageBox.Show("Falha ao excluir!");
+            else
+                MessageBox.Show("Falha ao excluir!");
         }
 
         private void btnListar_Click(object sender, EventArgs e)
