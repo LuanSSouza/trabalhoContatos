@@ -166,7 +166,8 @@
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblEmail);
             this.Name = "GUI";
-            this.Text = "GUI";
+            this.Text = "Contatos";
+            this.Load += new System.EventHandler(this.GUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

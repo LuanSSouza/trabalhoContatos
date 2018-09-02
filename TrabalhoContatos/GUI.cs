@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrabalhoContatos.Controllers;
+using TrabalhoContatos.Models;
 
 namespace TrabalhoContatos
 {
